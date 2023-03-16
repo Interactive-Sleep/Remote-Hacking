@@ -27,10 +27,10 @@ void loop(){
 /**
 * @param buf - the hex code
 * @param len - the length of the code
-* @param hz - the frequency of the wave
+* @param hz - the frequency of the wave, default to 38 kHz (commercial IR transmission frequency)
 * @return 1 for error, 0 for success
 */
-int sendIrSignal(unsigned int buf[], int len, int hz){
+int sendIrSignal(unsigned int buf[], int len, int hz=38){
   // Can add whatever checks we need here
   irsend.sendRaw(buf, len, hz);
   return 0
@@ -73,7 +73,7 @@ int turnOffVibrate(){
 }
 
 int resetBed(){
-  
+
 }
 
 

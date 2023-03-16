@@ -12,11 +12,11 @@ To add them to your IDE perform same steps as described in setup-instructions fo
 
 We're going to have to use the RemoteProtocol.ino program to get the infrared protocol of the bed. Common ones are, Sony, Matsushita, NEC, and RC5.
 
-The protocol is how the infrared wave is convereted to binary, I am not 100% sure what kind of modulation is used, however, I am pretty sure data is encoded using FM (Frequency modulation). FM is just using 2 distinct frequencies to encode 0 and 1 (see below), AM is using 2 different amplitudes. 
+The protocol is how the infrared wave is convereted to binary, the modulation technique is just off and on, similar to FM, AM, and PM, but instead of using different frequency, amplitude, and phase, we just check if the wave is off or on. This is interpreated as high or low e.g. 1 or 0
 
-The seperate protocols all use the same modulation technique and frequency bands, however, they use different time intervals between frequency changes.
+![image-20230316155714487](/Users/antonyloose/Library/Application Support/typora-user-images/image-20230316155714487.png)
 
-![Difference Between AM And FM - Introduction | What is Amplitude Modulation](https://cdn1.byjus.com/wp-content/uploads/2020/07/Difference-Between-AM-And-FM1.png)
+The seperate protocols all use the same modulation technique and frequency bands, however, they use different time intervals between off and on.
 
 ### Unknown protocol
 
