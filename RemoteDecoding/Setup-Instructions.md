@@ -1,5 +1,9 @@
 # Setup instructions
 
+## Tutorial
+
+[IR Decoding Tutorial](https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/)
+
 ## IDE installation
 
 [Arduino IDE](https://www.arduino.cc/en/software)

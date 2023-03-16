@@ -2,7 +2,11 @@
 
 ## Tutorial
 
-[IR Emitter Tutorial](https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/)
+[IR Emitter Tutorial](https://littlebirdelectronics.com.au/guides/5/infrared-transmitter-with-arduino)
+
+Required libraries are in resources > IR-Lib2-master
+
+To add them to your IDE perform same steps as described in setup-instructions for the RemoteDecoding
 
 ## Protocol
 

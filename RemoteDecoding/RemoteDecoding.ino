@@ -1,4 +1,5 @@
 // Tutorial here: https://www.instructables.com/IR-Remote-Hacking-and-Automation/
+// and https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/
 
 #include <boarddefs.h>
 #include <IRremote.h>
