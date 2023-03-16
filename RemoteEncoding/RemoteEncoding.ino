@@ -1,20 +1,16 @@
-// Tutorial: https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/
-// and https://littlebirdelectronics.com.au/guides/5/infrared-transmitter-with-arduino
+// Tutorial: https://learn.sparkfun.com/tutorials/ir-communication
 
 #include <IRremote.h>
+// TODO: there's a package we need to include for irsend.sendRaw(buf, len, hz);
 
 const int RECV_PIN = 7;
 IRrecv irrecv(RECV_PIN);
 decode_results results;
-const int PIN_10 = 10;
-const int PIN_11 = 11;
 
 
 void setup(){
   irrecv.enableIRIn();
   irrecv.blink13(true);
-  pinMode(PIN_10, OUTPUT);
-  pinMode(PIN_11, OUTPUT);
 }
 
 void loop(){
@@ -27,4 +23,57 @@ void loop(){
         irrecv.resume(); 
     }
 }
+
+/**
+* @param buf - the hex code
+* @param len - the length of the code
+* @param hz - the frequency of the wave
+* @return 1 for error, 0 for success
+*/
+int sendIrSignal(unsigned int buf[], int len, int hz){
+  // Can add whatever checks we need here
+  irsend.sendRaw(buf, len, hz);
+  return 0
+}
+
+int liftHead(){
+
+}
+
+int lowerHead(){
+
+}
+
+int liftFoot(){
+
+}
+
+int lowerFoot(){
+
+}
+
+int vibrate(int intensity){
+  // three levels of intensity
+  if (intensity == 1){
+
+  }else if (intensity == 2){
+
+  }else if (intensity == 3){
+
+  }else if (intensity == 0){
+
+  }else{
+    // error
+    return 1
+  }
+}
+
+int turnOffVibrate(){
+  vibrate(0)
+}
+
+int resetBed(){
+  
+}
+
 
