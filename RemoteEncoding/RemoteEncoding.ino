@@ -1,4 +1,4 @@
-// Tutorial: https://littlebirdelectronics.com.au/guides/5/infrared-transmitter-with-arduino
+// Tutorial: https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/
 
 void setup() {
   // put your setup code here, to run once:
